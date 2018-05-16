@@ -1,0 +1,45 @@
+﻿@model AprendendoMVC2.Models.Pessoa
+@{
+    ViewBag.Title = "Resultado";
+}
+
+<h2>Resultado</h2>
+
+<fieldset>
+    <legend>Dados pessoais</legend>
+    <div>
+        @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+     <div>
+        @Html.DisplayNameFor(model => model.Observacao)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Observacao)
+    </div>
+
+     <div>
+        @Html.DisplayNameFor(model => model.Idade)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Idade)
+    </div>
+
+     <div>
+        @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+     <div>
+        @Html.DisplayNameFor(model => model.Login)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Login)
+    </div>    
+    @Html.ActionLink("voltar","Index")
+</fieldset>
